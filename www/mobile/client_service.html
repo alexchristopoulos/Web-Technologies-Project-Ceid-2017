@@ -1,0 +1,105 @@
+<html>
+<head><meta charset='UTF-8'/></head>
+
+<body style="background-image:url(background.jpg); padding:0px; margin:0; height: 50%;  background-position: center;  background-repeat: no-repeat;  background-size: cover;" >
+
+<div style="width:100%;  background-color:darkred; padding:0px;">
+<table style="width:100%;">
+<tr><center>
+<td style="width:200px; text-align:center; font-size:68px;"><button style="background:url(menu.png) no-repeat; background-size:200px; display:block; width:200px; height:200px; border: none;" onclick='menu();'/></td>
+<td style="font-size:90px; font-family:verdana">ΕΞΥΠΗΡΕΤΗΣΗ ΠΕΛΑΤΩΝ</td></center>
+</tr>
+</table>
+</div>
+<center>
+
+
+
+<div id="welcomediv" style="padding:8px; padding-top:15px;"><strong>
+<h1 style="font-size:120px;
+text-shadow:7px 5px 5px black;
+color:darkred; font-family:verdana;">ΚΑΛΩΣ ΗΡΘΑΤΕ</h1></strong>
+</div>
+<!-- _________________________________________________________________________________________________________________________ -->
+
+
+
+
+
+
+<!-- _________________________________________________________________________________________________________________________ -->
+<div id="anazitisi">
+</div>
+
+
+
+
+
+
+
+
+<!-- _________________________________________________________________________________________________________________________ -->
+<div id="xartis">
+</div>
+
+
+
+
+
+
+
+<!-- _________________________________________________________________________________________________________________________ -->
+<div id="apostoli">
+</div>
+
+
+
+
+
+<!-- _________________________________________________________________________________________________________________________ -->
+</center>
+<div id="menu" style="padding:5px; background-color:rgba(0,0,0,.52); position:absolute; top:250px; display:none;">
+<center>
+<table style="width:100%; padding:20px">
+<center>
+<tr >
+<td align='center' height="200" style="padding:10px "><input type='button' value="Αρχική Σελίδα" onclick='arxiki();' style=" height:95%;  font-size:60px; padding:5px; color:white; border:none; border-radius:7px; text-shadow:3px 1px 1px black; background-color:darkred; width:100%;"></td>
+</tr>
+<tr>
+<td align='center' height="200" style="padding:10px "><input type='submit' value="Δίκυτο Καταστημάτων/hubs" onclick='xartis();' style="height:95%;width:100%; color:white; padding:5px;  border-radius:7px; text-shadow:3px 1px 1px black; border:none; background-color:darkred; font-size:60px;"></td>
+</tr>
+<tr>
+<td align='center' height="200" style="padding:10px "><input type='submit' value="Παρακολούθηση Αποστολής" onclick='apostoli();' style="height:95%;width:100%; color:white; padding:5px; border-radius:7px; border:none; text-shadow:3px 1px 1px black; background-color:darkred; font-size:60px;"></td>
+</tr>
+<tr>
+<td align='center' height="200" style="padding:10px "><input type='submit' value="Αναζήτηση" onclick='anazitisi();' style="height:95%;width:100%; border:none; color:white; padding:5px; border-radius:7px; text-shadow:3px 1px 1px black; background-color:darkred; font-size:60px;"></td>
+</tr>
+</table>
+</center>
+</div>
+
+
+
+
+<script>
+function arxiki(){
+window.location.href='main_mobile.html';
+}
+function xartis(){
+}
+function apostoli(){
+}
+function anazitisi(){
+}
+function menu(){
+if(document.getElementById('menu').style.display=='block'){
+document.getElementById('menu').style.display='none';
+}else{
+document.getElementById('menu').style.display='block';
+}
+
+}
+
+</script>
+</body>
+</html>

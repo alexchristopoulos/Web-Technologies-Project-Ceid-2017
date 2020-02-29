@@ -1,0 +1,42 @@
+<html><head><meta charset="UTF-8"/>
+</head>
+<style>
+html, body, #full {
+  height: 100%;
+}
+
+#full {
+  display: flex;
+  flex-direction: column;
+ // padding:25%;
+}
+
+#someid {
+  flex-grow: 1;
+} h1{ font-size:85px; font-family:verdana; text-shadow:5px 5px 7px grey;}
+
+
+p{ font-size:64px; text-align:left; font-family:verdana; text-shadow:3px 3px 5px black; color:darkgrey;}
+div{ background-repeat: no-repeat;
+    background-size: 100% 100%; }
+</style>
+
+<body style="padding:0; margin:0;">
+<div id="full" style="top:0;  top:0;">
+<div id="someid" style="padding:7%; padding-top:2%; background-image:url(b2.jpg); height:100%; ">
+<center><h1>ΣΥΝΔΕΣΗ ΧΡΗΣΤΗ</h1>
+<div  style="padding:2%; position:relative; width:100%; height:75%;  border:2px; border-style:outset; background:rgba(145, 26, 26, .52); border-color:grey; border-radius:8px;">
+<form action="login.php" style="text-align :left;" method='post' accept-charset='UTF-8' enctype='multipart/form-data' >
+<strong><p>Συνθηματικό</p></strong>
+<input type="text" name="username" placeholder="Συνθηματικό"style="width:100%; border-radius:7px; font-size:75px; height:95px;"/>
+<strong><p>Κωδικός</p></strong>
+<input type="password" name="password" placeholder="Κωδικός Πρόσβασης" style="width:100%; border-radius:7px; font-size:75px; height:95px;"/><hr style="background-color:rgba(86,89,19,.0); height:5px; border:none;"><br><br>
+<input type="submit" value="ΣΥΝΔΕΘΕΙΤΕ" style="width:100%; background-color:darkgreen; text-shadow: 3px 3px 5px black; color:white; border:0; border-radius:7px; font-size:75px; height:95px;"/>
+</form>
+</div>
+</div>
+</div>
+
+
+</body> 
+</html>

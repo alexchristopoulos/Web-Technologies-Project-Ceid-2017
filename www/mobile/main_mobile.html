@@ -1,0 +1,78 @@
+<html><head><meta charset="UTF-8"/>
+</head>
+<style>
+html, body, #full {
+  height: 100%;
+}
+
+#full {
+  display: flex;
+  flex-direction: column;
+}
+
+#someid {
+  flex-grow: 1;
+} h1{ font-size:58px;}
+ul{ 
+list-style-type: none;
+margin: 0;
+padding-top: 0px;
+padding-left:5px;
+padding-right:5px;
+position :absolute; left:0px; right:0%;
+overflow: hidden;
+background-color: darkred;
+}
+li{ //rgba(54, 25, 25, .2);
+float: left;
+}
+td{ width:33.33%;
+}
+p{ font-size:24px;}
+li a{
+display: block;
+color: lightgrey;
+font-family:verdana;
+font-size:34px;
+text-align: center;
+padding: 28px 20px;
+text-decoration: none;
+}
+li a:hover {
+background-color: #111;
+} div{ background-repeat: no-repeat;
+    background-size: 100% 100%; }
+</style>
+
+<body style="padding:0; margin:0;">
+<div id="full" style="top:0;">
+	<div id="header" style=" background-image:url(img1.jpg);"><!--<img src="img1.jpg" width="100%" height="220px"><center>-->
+<center><h1  style="text-shadow: 3px 3px 5px white; top:0px; left:25%; right:25%; color:rgba(0,0,0,.8); font-family:verdana;">ΣΤΥΣΤΗΜΑ ΑΠΟΣΤΟΛΩΝ ΔΕΜΑΤΩΝ</h1></center><!--style="position:absolute;-->
+<table width="100%" style="padding:0px; border:2px;  border-color:darkred; height:12%; border-bottom-style:outset; background-color:rgba(145, 26, 26,.52);">
+<tr style="width:100%; height:100%;  padding:0;">
+<td><button onclick="location.href='client_service.php';" style="width:100%; height:100%; text-shadow: 3px 3px 5px black; background-color:rgba(145, 26, 26, .52); display:block; color:orange; font-size:30px; padding:10px; border-color:grey;">Εξυπηρέτηση</button></td>
+<td><button onclick="location.href='mobile_logon.html';" style="width:100%;  height:100%; text-shadow: 3px 3px 5px black; background-color:rgba(145, 26, 26, .52); display:block; color:orange; font-size:30px; padding:10px; border-color:grey;">Σύνδεση Χρήστη</button></td>
+<td><button style="width:100%; height:100%; text-shadow: 3px 3px 5px black; background-color:rgba(145, 26, 26, .52); display:block; color:orange; font-size:30px; padding:10px; border-color:grey;"
+onclick='
+ document.getElementById("myh1").innerHTML="<center>Επικοινωνία";
+ document.getElementById("myp1").innerHTML="<br><br><center>Αλέξανδρος Χριστόπουλος 5928 christ@ceid.upatras.gr";
+ document.getElementById("myp2").innerHTML="<center>Κωνσταντίνος Χριστόπουλος 5929";
+ document.getElementById("myp3").innerHTML="<center>Παναγιώτης Κάντας 5777";
+'
+>Επικοινωνία</button></td></tr>
+</table>
+</div>
+    <div id="someid" style="background-image: url(b2.jpg);"><br>
+	<div style="padding-top:0px; padding-left:14px; padding-right:14px;">
+	<div id="someid"style="background: rgba(255, 255, 255, .37);  padding:15px; border:2px; border-color:lightgrey; border-style:outset; padding-top:2px; height:950px; border-radius:8px;"><!--box-shadow:6px 6px 3px darkgrey;-->
+	<h1 id="myh1" style="text-shadow: 2px 2px 4px blue; font-size:45px; color:rgb(173, 83, 31); font-family:verdana;"><center>Καλώς Ήρθατε</center></h1>
+	<p id="myp1">Οι πελάτες μέσω του ιστοτόπυ αυτού μπορούν να ενημερωθούν για το δέμα τους</p>
+	<p id="myp2">Οι υπάλληλοι αποθηκών μπορούν να συνδεθούν στο σύστημα αποθηκών</p>
+	<p id="myp3"></p>
+	</div><p style="text-align:right; font-size:12px;"><strong>Project Web 2017</strong></p></div>
+	</div>
+</div>
+
+
+</body> 
+</html>

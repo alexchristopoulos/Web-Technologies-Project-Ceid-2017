@@ -1,0 +1,59 @@
+<html>
+  <head meta charset="UTF-8">
+    <title>Transit Hub Scanner Application</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/webrtc-adapter/3.3.3/adapter.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js"></script>
+    <script type="text/javascript" src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
+  </head>
+  <body onload="">
+    <div id="app">
+      <div class="sidebar">
+        <section class="cameras">
+          <h2 style="font-size:62px;">Διαθέσιμες Κάμερες</h2>
+          <ul>
+            <li v-if="cameras.length === 0" class="empty">No cameras found</li>
+            <li v-for="camera in cameras">
+              <span v-if="camera.id == activeCameraId" :title="formatName(camera.name)" class="active">{{ formatName(camera.name) }}</span>
+              <span v-if="camera.id != activeCameraId" :title="formatName(camera.name)">
+                <a @click.stop="selectCamera(camera)">{{ formatName(camera.name) }}</a>
+              </span>
+            </li>
+          </ul>
+        </section>
+        <section class="scans">
+          <h2 style="font-size:62px;">Αποτέλεσμα Σάρωσης</h2>
+          <ul v-if="scans.length === 0">
+            <li class="empty">No scans yet</li>
+          </ul>
+          <transition-group name="scans" tag="ul">
+            <li v-for="scan in scans" :key="scan.date" :title="scan.content">{{ scan.content }}</li>
+          </transition-group>
+        </section>
+		<section>
+		<form action="logoff.php">
+		<input type="submit" value="ΑΠΟΣΥΝΔΕΣΗ"
+ style=" display:block; height:20%; width:100%; text-shadow: 3px 3px 5px black; background-color:darkred; display:block; color:orange; font-size:42px; padding:10px; border-color:grey;"/></form>
+		</form>
+		</section>
+      </div>
+      <div class="preview-container">
+	  <canvas id="canvas" style="width:100%; height:80%;">
+	  <script>
+	  function updateVideo( ) {
+    var canvas = document.getElementById( 'canvas' );
+    var ctx = canvas.getContext( '2d' );
+    var myVideo = document.getElementById( 'preview' );
+    ctx.drawImage( myVideo, 0, 0, 200, 200 );
+}
+setInterval ( updateVideo, 24 );
+	  </script>
+	  <video id="preview" style=""></video>
+	  </canvas>
+        
+      </div>
+    </div>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>

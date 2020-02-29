@@ -1,0 +1,66 @@
+<html>
+<head><meta = charset="UTF-8"></head>
+<style>
+ul{
+list-style-type: none;
+margin: 0;
+padding-top: 0px;
+padding-left:5px;
+padding-right:5px;
+overflow: hidden;
+background-color: darkred;
+}
+li{
+float: left;
+}
+li a{
+display: block;
+color: lightgrey;
+font-family:verdana;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+li a:hover {
+background-color: #111;
+}
+p{
+text-shadow:2px 2px 4px grey;
+font-size:16px;
+font-family:verdana;
+}
+</style>
+<body background="b2.jpg">
+<div style="padding:25px; padding-top:60px; ">
+<center>
+<div style="padding:0px; border:solid; border-size:5px; border-color:grey; overflow-y:auto; border-top:0px; border-bottom:0px; background-color:white; background-image:url(maindiv.jpg); height:850px; width:920px;">
+<img src="mainlogo.png" width="100%" height="185px" align="middle"/>
+ <ul>
+  <li><a href="#main" onclick='
+  document.getElementById("mytitle").innerHTML="ΙΣΤΟΤΟΠΟΣ ΤΑΧΥΔΡΟΜΙΚΩΝ ΑΠΟΣΤΟΛΩΝ";
+  document.getElementById("par1").innerHTML="Το σύστημα παρέχει υπηρεσίες προς του πελάτες και προς το προσωπικό της εταιρίας.";
+  document.getElementById("par2").innerHTML="Ως πελάτης έχετε την δυνατότητα να ενημερωθείται για την παραγγελεία σας καθώς και για το δίκτυο καταστημάτων.";
+  document.getElementById("par3").innerHTML="Ως υπάλληλος θα πρέπει να συνδεθείτε στο σύστημα προκειμένου να συνεχίσετε.";
+  '
+  >Αρχική Σελίδα</a></li>
+  <li><a href="costumer.php">Εξυπηρέτηση  Πελατών</a></li>
+  <li><a href="logon.html">Υπηρεσίες Προσωπικού</a></li>
+  <li style="float:right"><a class="active" href="#contact" onclick='
+  document.getElementById("mytitle").innerHTML="Επικοινωνία";
+  document.getElementById("par1").innerHTML="Αλέξανδρος Χριστόπουλος email: christ@ceid.upatras.gr";
+  document.getElementById("par2").innerHTML="Κωνσταντίνος Χριστόπουλος email: kchrist@ceid.upatras.gr";
+  document.getElementById("par3").innerHTML="Παναγιώτης Κάντας email: pkantas@ceid.upatras.gr";
+  '>Επικοινωνία</a></li>
+</ul>
+<div id= "board" style="padding: 4px; padding-left:10px; padding-right:10px;">
+<p id="mytitle" style="font-size:36px; text-shadow:3px 3px 5px grey; font-family:verdana; color:darkblue;">ΙΣΤΟΤΟΠΟΣ ΤΑΧΥΔΡΟΜΙΚΩΝ ΑΠΟΣΤΟΛΩΝ</p><hr><center>
+<p id="par1">Το σύστημα παρέχει υπηρεσίες προς του πελάτες και προς το προσωπικό της εταιρίας.</p>
+<p id="par2">Ως πελάτης έχετε την δυνατότητα να ενημερωθείται για την παραγγελεία σας καθώς και για το δίκτυο καταστημάτων.</p></center>
+<p id="par3">Ως υπάλληλος θα πρέπει να συνδεθείτε στο σύστημα προκειμένου να συνεχίσετε.</p>
+</div>
+</div>
+</center>
+</div>
+<p style="font-size:12px;" align="right"><strong>Project web 2017</strong></p>
+</body>
+</html>
